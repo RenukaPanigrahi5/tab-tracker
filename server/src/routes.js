@@ -8,6 +8,13 @@ module.exports = (app) =>
 
     app.post('/login',
        AuthenticationController.login) 
-       } 
+        
 
- 
+       app.post('/songs',
+       SongsController.index) 
+        
+       app.post('/songs',
+       SongsController.post) 
+
+    }
+  
